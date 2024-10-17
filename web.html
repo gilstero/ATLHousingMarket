@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlanta Heat Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        #map-container {
+            margin-top: 20px;
+            width: 80%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #map-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Atlanta Heat Map</h1>
+
+    <!-- Map Container -->
+    <div id="map-container">
+        <!-- Google Maps static image of Atlanta -->
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Atlanta,GA&zoom=12&size=800x600&maptype=roadmap&key=YOUR_API_KEY" alt="Google Maps view of Atlanta">
+    </div>
+
+</body>
+</html>
